@@ -31,5 +31,23 @@ echo '<ul>';
 
 ?>
 
+<h2>Ejercicio 2</h2>
+<p>Proporcionar los valores de $a, $b, $c como sigue:</p>
+<p>$a = “ManejadorSQL”;
+$b = 'MySQL’;
+$c = &$a;</p>
+
+<?php
+$a = "ManejadorSQL";
+$b = 'MySQL';
+$c = &$a;
+
+echo 'La variable $a'.$a;
+echo 'La variable $b'.$b;
+echo 'La variable $c'.$c;
+
+
+?>
+
 </body>
 </html>
