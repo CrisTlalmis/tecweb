@@ -42,12 +42,36 @@ $a = "ManejadorSQL";
 $b = 'MySQL';
 $c = &$a;
 
-echo 'La variable $a'.$a;
-echo 'La variable $b'.$b;
-echo 'La variable $c'.$c;
+//Segundo bloque de instrucciones
 
+$a = "PHP server";
+$b = &$a;
+//impresion de variables
+echo 'La variable $a contiene: '.$a;
+echo '<br>';
+echo 'La variable $b contiene: '.$b;
+echo '<br>';
+echo 'La variable $c contiene: '.$c;
+echo '<br>';
 
+echo '<p>En el segundo bloque de las instrucciones cambiamos el valor de nuestras variables $a, $b y $c
+por PHP server, se cambia en todas ya que estamos indicando que $a tendra ese contenido, $b esta apuntando al 
+contenido de $a y $c en el primer bloque esta apuntando a $a pero como cambiamos su contenido tambien cambiara
+el de $c
+</p>'
 ?>
+
+<h2>Ejercicio 3</h2>
+<p>Muestra el contenido de cada variable inmediatamente después de cada asignación,
+verificar la evolución del tipo de estas variables (imprime todos los componentes de los
+arreglo): <br>
+$a = “PHP5”;<br>
+$z[] = &$a;<br>
+$b = “5a version de PHP”;<br>
+$c = $b*10;<br>
+$a .= $b;<br>
+$b *= $c;<br>
+$z[0] = “MySQL”; <br> </p>
 
 </body>
 </html>
