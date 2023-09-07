@@ -97,10 +97,22 @@ $z[0] = "MySQL";
 var_dump ($z);
 //echo 'La variable $z contiene: '.$z;
 echo '<br>';
-
-
-//echo 'La variable $a contiene: '.$GLOBALS[''];
 ?>
+
+<h2>Ejercicio 4</h2>
+<p>Lee y muestra los valores de las variables del ejercicio anterior, pero ahora con la ayuda de
+la matriz $GLOBALS o del modificador global de PHP.</p>
+<?php
+
+global $a, $b, $c, $z;
+var_dump($GLOBALS['a']);
+var_dump($GLOBALS['b']); 
+var_dump($GLOBALS['c']); 
+var_dump($GLOBALS['z']);
+?>
+
+
+
 
 </body>
 </html>
