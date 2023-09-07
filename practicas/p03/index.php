@@ -161,10 +161,18 @@ var_dump($f);
 //transformar el valor booleano de $c y $e en uno que se pueda mostrar con un echo:
 echo boolval($c); // Muestra "0"
 echo boolval($e); // Muestra "1"
-
 ?>
-
-
+<h2>Ejercicio 7</h2>
+<p>Usando la variable predefinida $_SERVER, determina lo siguiente: <br>
+a. La versión de Apache y PHP, <br>
+b. El nombre del sistema operativo (servidor), <br>
+c. El idioma del navegador (cliente). <br> </p>
+<?php
+echo "Versión de Apache: " . $_SERVER['SERVER_SOFTWARE'] . "<br>";
+echo "Versión de PHP: " . phpversion() . "<br>";
+echo "Nombre del sistema operativo del servidor: " . php_uname('s') . "<br>";
+echo "Idioma del navegador del cliente: " . $_SERVER['HTTP_ACCEPT_LANGUAGE'] . "<br>";
+?>
 
 </body>
 </html>
