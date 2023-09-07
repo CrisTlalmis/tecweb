@@ -73,5 +73,34 @@ $a .= $b;<br>
 $b *= $c;<br>
 $z[0] = “MySQL”; <br> </p>
 
+<?php
+$a = "PHP5";
+echo 'La variable $a contiene: '.$a;
+echo '<br>';
+$z[] = &$a;
+var_dump ($z);
+//echo 'La variable $z contiene: '.$z;
+echo '<br>';
+$b = "5a version de PHP";
+echo 'La variable $b contiene: '.$b;
+echo '<br>';
+@$c = $b*10;
+echo 'La variable $c contiene: '.$c;
+echo '<br>';
+$a .= $b;
+echo 'La variable $a contiene: '.$a;
+echo '<br>';
+$b *= $c;
+echo 'La variable $b contiene: '.$b;
+echo '<br>';
+$z[0] = "MySQL";
+var_dump ($z);
+//echo 'La variable $z contiene: '.$z;
+echo '<br>';
+
+
+//echo 'La variable $a contiene: '.$GLOBALS[''];
+?>
+
 </body>
 </html>
