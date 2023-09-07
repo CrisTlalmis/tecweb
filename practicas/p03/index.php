@@ -109,8 +109,60 @@ var_dump($GLOBALS['a']);
 var_dump($GLOBALS['b']); 
 var_dump($GLOBALS['c']); 
 var_dump($GLOBALS['z']);
+
+unset ($a, $b, $c, $z );
 ?>
 
+<h2>Ejercicio 5</h2>
+<p>Dar el valor de las variables $a, $b, $c al final del siguiente script: <br>
+$a = “7 personas”;<br>
+$b = (integer) $a;<br>
+$a = “9E3”;<br>
+$c = (double) $a;<br></p>
+
+<?php
+$a = "7 personas";
+$b = (integer) $a;
+$a = "9E3";
+$c = (double) $a;
+
+echo 'El valor de $a es: '.$a."<br>";
+echo 'El valor de $b es: '.$b."<br>";
+echo 'El valor de $c es: '.$c."<br>";
+
+unset ($a, $b, $c, $z );
+?>
+<h2>Ejercicio 6</h2>
+<p>Dar y comprobar el valor booleano de las variables $a, $b, $c, $d, $e y $f y muéstralas
+usando la función var_dump(<datos>).
+Después investiga una función de PHP que permita transformar el valor booleano de $c y $e
+en uno que se pueda mostrar con un echo: <br>
+$a = “0”; <br>
+$b = “TRUE”; <br>
+$c = FALSE; <br>
+$d = ($a OR $b); <br>
+$e = ($a AND $c); <br>
+$f = ($a XOR $b); <br> </p>
+
+<?php
+$a = "0";
+$b = "TRUE";
+$c = FALSE;
+$d = ($a OR $b);
+$e = ($a AND $c);
+$f = ($a XOR $b);
+
+var_dump($a);
+var_dump($b);
+var_dump($c);
+var_dump($d);
+var_dump($e);
+var_dump($f);
+//transformar el valor booleano de $c y $e en uno que se pueda mostrar con un echo:
+echo boolval($c); // Muestra "0"
+echo boolval($e); // Muestra "1"
+
+?>
 
 
 
